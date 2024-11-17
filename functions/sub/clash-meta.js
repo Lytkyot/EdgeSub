@@ -30,7 +30,7 @@ export async function onRequest (context, isClashOriginal = false) {
             isUDP: URLObject.searchParams.get("udp") === "true",
             isInsecure: true,
             RemoteConfig: URLObject.searchParams.get("remote_config") || "__DEFAULT__",
-            isForcedRefresh: URLObject.searchParams.get("forced_refresh") === "true" ? true : false
+            isForcedRefresh: URLObject.searchParams.get("forced_refresh") === "true" ? true : true
         }
     )
 
